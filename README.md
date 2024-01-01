@@ -45,30 +45,14 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/iter-unique
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var iterUnique = require( '@stdlib/iter-unique' );
+import iterUnique from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-unique@deno/mod.js';
 ```
 
 #### iterUnique( iterator )
@@ -76,7 +60,7 @@ var iterUnique = require( '@stdlib/iter-unique' );
 Returns an [iterator][mdn-iterator-protocol] which returns unique values.
 
 ```javascript
-var array2iterator = require( '@stdlib/array-to-iterator' );
+import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
 
 var it = iterUnique( array2iterator( [ 2, 1, 1, 2, 4, 3, 4, 3 ] ) );
 // returns <Object>
@@ -129,8 +113,8 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var discreteUniform = require( '@stdlib/random-iter-discrete-uniform' );
-var iterUnique = require( '@stdlib/iter-unique' );
+import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-discrete-uniform@deno/mod.js';
+import iterUnique from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-unique@deno/mod.js';
 
 // Create a seeded iterator which can generate 1000 pseudorandom numbers:
 var rand = discreteUniform( 1, 10, {
@@ -188,7 +172,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -252,9 +236,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/unique-by]: https://github.com/stdlib-js/iter-unique-by
+[@stdlib/iter/unique-by]: https://github.com/stdlib-js/iter-unique-by/tree/deno
 
-[@stdlib/iter/unique-by-hash]: https://github.com/stdlib-js/iter-unique-by-hash
+[@stdlib/iter/unique-by-hash]: https://github.com/stdlib-js/iter-unique-by-hash/tree/deno
 
 <!-- </related-links> -->
 
