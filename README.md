@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterUnique from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-unique@esm/index.mjs';
+import iterUnique from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-unique@v0.2.0-esm/index.mjs';
 ```
 
 #### iterUnique( iterator )
@@ -119,7 +119,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 <script type="module">
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-discrete-uniform@esm/index.mjs';
-import iterUnique from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-unique@esm/index.mjs';
+import iterUnique from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-unique@v0.2.0-esm/index.mjs';
 
 // Create a seeded iterator which can generate 1000 pseudorandom numbers:
 var rand = discreteUniform( 1, 10, {
